@@ -1,0 +1,56 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# --- Ambientes virtuais ---
+.venv/
+venv/
+env/
+ENV/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+
+# --- Dados sensíveis / brutos (nunca versionar) ---
+datasets/raw/
+*.mp4
+*.avi
+*.mov
+*.mkv
+!docs/**/*.mp4
+
+# --- Modelos grandes (usar Git LFS ou releases) ---
+models/*.pt
+models/*.onnx
+models/*.engine
+!models/.gitkeep
+
+# --- Logs e métricas locais ---
+*.log
+runs/
+wandb/
+mlruns/
+
+# --- Configuração local/sensível ---
+config/local.*
+.env
+*.env.local
+
+# --- Sistema operacional / editor ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+
+# --- Cache de ferramentas ---
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/

@@ -1,0 +1,28 @@
+# --- Visão computacional / detecção (fase atual) ---
+ultralytics>=8.1.0
+torch>=2.1.0
+torchvision>=0.16.0
+opencv-python>=4.9.0
+pillow>=10.0.0
+
+# --- OCR (fase futura) ---
+# paddleocr>=2.7.0
+# paddlepaddle>=2.6.0
+
+# --- Utilitários gerais ---
+numpy>=1.26.0
+pyyaml>=6.0
+python-Levenshtein>=0.23.0
+
+# --- Telemetria / GTFS (fase futura) ---
+# gtfs-realtime-bindings>=1.0.0
+# requests>=2.31.0
+
+# --- Áudio / TTS (fase futura) ---
+# pyttsx3>=2.90
+
+# --- Testes ---
+pytest>=8.0.0
+
+# --- Qualidade de código ---
+ruff>=0.3.0

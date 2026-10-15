@@ -1,0 +1,30 @@
+# Configuração de exemplo de um ponto de ônibus
+# Copie este arquivo para config/local.yaml (não versionado) e ajuste os valores reais
+
+ponto:
+  id: "ponto-exemplo-001"
+  nome: "Ponto de teste — não configurado"
+  latitude: 0.0
+  longitude: 0.0
+
+deteccao:
+  raio_alerta_metros: 300
+  tolerancia_angular_graus: 30
+  idade_maxima_feed_segundos: 15
+  cooldown_segundos: 90
+
+linhas_validas:
+  - id: "0000"
+    nome: "Linha de exemplo"
+    sentido: "ida"
+    mensagem_audio: "Atenção, a linha de exemplo está se aproximando."
+
+visao:
+  modelo: "models/bus-detector-v0.pt"
+  confianca_minima: 0.5
+  fonte_camera: null  # null = modo simulação/dataset; caminho de vídeo ou índice de câmera quando aplicável
+
+audio:
+  voz: "pt-br-padrao"
+  volume: 0.8
+  repetir_apos_segundos: null  # null = não repetir para o mesmo evento
