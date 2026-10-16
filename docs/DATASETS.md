@@ -6,7 +6,8 @@ Todo dataset usado no projeto — público ou coletado internamente — deve ser
 
 | Dataset | Origem | Licença | Classes usadas | Status |
 |---|---|---|---|---|
-| COCO (pesos pré-treinados Ultralytics) | https://cocodataset.org | CC BY 4.0 | `bus` | ⬜ A avaliar |
+| PASCAL VOC 2007 (split de teste) | http://host.robots.ox.ac.uk/pascal/VOC/voc2007/ (cópia da Ultralytics no GitHub) | Imagens do Flickr: uso para pesquisa e avaliação; não redistribuir | `bus` (+ negativos com `car`) | ✅ Usado na linha de base v0 (16/10/2026) |
+| COCO (pesos pré-treinados Ultralytics) | https://cocodataset.org | CC BY 4.0 (anotações) | `bus` | ✅ Origem dos pesos `yolov8n.pt`; não usado como teste, para evitar vazamento de dados |
 | Roboflow Universe — "bus detection" | https://universe.roboflow.com | Variável por dataset — conferir individualmente | `bus` | ⬜ A avaliar |
 | BDD100K | https://bdd-data.berkeley.edu | BDD100K License (uso não comercial/pesquisa) | `bus` | ⬜ A avaliar |
 | Open Images Dataset (classe Bus) | https://storage.googleapis.com/openimages | CC BY 4.0 | `Bus` | ⬜ A avaliar |
